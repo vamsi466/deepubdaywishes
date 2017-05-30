@@ -1,0 +1,30 @@
+
+body {
+ background:url('../images/background.jpg'); 
+}
+
+.picture-frame {
+  background-color:blue;
+  width: 40%;
+  border:#2e3192 solid 20px;
+  border-radius: 10px;
+  height:80%;
+  -webkit-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
+box-shadow: 4px 13px 59px 8px rgb(42,198,248);
+  margin:50px;
+  position:relative;
+}
+.matte {
+  background-color:white;
+  height:100%;
+  -webkit-box-shadow: inset 10px 10px 37px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 37px 0px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 37px 0px rgba(0,0,0,0.75);
+}
+
+.art {
+  width:90%;
+  height:90%;
+  margin:5% 5% 5% 5%;
+}
