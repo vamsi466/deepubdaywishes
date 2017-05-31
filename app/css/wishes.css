@@ -13,7 +13,7 @@ body {
 -moz-box-shadow: 4px 13px 59px 8px rgba(0,0,0,0.75);
 box-shadow: 4px 13px 59px 8px rgb(42,198,248);
   margin:50px;
-  position:relative;
+  position: absolute;
 }
 .matte {
   background-color:white;
@@ -27,4 +27,16 @@ box-shadow: inset 10px 10px 37px 0px rgba(0,0,0,0.75);
   width:90%;
   height:90%;
   margin:5% 5% 5% 5%;
+}
+
+.flip{
+  -webkit-transform: rotatey(-180deg);
+	transform: rotatey(-180deg);
+  transform-style: preserve-3d;
+	position: relative;
+  transition:5s;
+}
+
+.front, .back {
+	position: absolute;
 }
