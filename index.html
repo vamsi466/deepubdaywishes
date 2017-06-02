@@ -6,17 +6,12 @@
         <link rel="stylesheet" href="app/css/wishes.css">
     </head>
 
-    <body class="container-fluid">
-        <div ng-controller="flipPhoto" style="margin-left:35%">
-            <div id="picture" class="picture-frame">
+    <body>
+        <!--<div class="wordTransition wordFont">HI</div>-->
+        <div ng-controller="flipPhoto" style="margin-left:65%">
+            <div ng-if="displayPicFrame" class="picture-frame flip">
                 <div class="matte">
                     <img class="art" src="app/images/{{imageDisplayed}}">
-                    <!--<div class="front">
-                        <img class="art" src="app/images/{{imageDisplayed}}">
-                    </div>
-                    <div class="back">
-                        <img class="art" src="app/images/{{imageDisplayed}}">
-                    </div>-->
                 </div>
             </div>
         </div>
