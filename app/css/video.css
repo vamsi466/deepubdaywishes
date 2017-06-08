@@ -1,5 +1,5 @@
 .curtain {
-	margin: 0 auto;
+	margin-top: 15% ;
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
@@ -32,12 +32,12 @@
 .curtain__panel {
 	display: flex;
 	align-items: center;
-  background-image: url("curtain.jpg");
-	color: #fff;
+	background-image: url("curtain11.jpg");
+	color: black;
 	float: left;
 	position: relative;
 	width: 50%;
-	height: 100vh;
+	height: 70vh;
 	transition: all 1s ease-out;
 	z-index: 2;
 }
@@ -53,7 +53,6 @@
 }
 
 .curtain__content {
-	background: #333;
 	color: #fff;
 	padding: 1rem 0;
 	position: absolute;
