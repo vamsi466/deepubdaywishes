@@ -30,6 +30,7 @@
             $scope.numberDisplayed = 3;
             var readyCount = $interval(function(){
               $scope.numberDisplayed--
+              console.log($scope.numberDisplayed)
               if($scope.numberDisplayed == 1){
                 $interval.cancel(readyCount);
                 $scope.displayVideoFrame = true;
@@ -51,7 +52,6 @@
                   if(iCtrl == initialArr.length){
                     $interval.cancel(intervalTime);
                     $scope.displayPicFrame = false;
-                    $scope.displayNum = true;
                   }
           },8000)
        }]);

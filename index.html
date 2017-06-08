@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="app/css/wishes.css"> 
     </head>
 
-    <body
+    <body>
        <div ng-controller="flipPhoto" >
             <div ng-if="displayPicFrame" class="wordContent wordFont col-md-7 col-sm-7">
                 <div>Happy Birthday to You</div>
@@ -19,9 +19,9 @@
                     </div>
                 </div>
             </div>
-            <div ng-if="displayPicFrame != 'true' && displayVideoFrame = 'false'" class="col-md-offset-3 wordContent wordFont">
+            <div ng-if="displayPicFrame != 'true'" class="col-md-offset-3 wordContent wordFont">
                 <h1 class="numberFontSize" style="margin-top:100px">Are You Ready....</h1>
-                <h3 class="nameDisplay">{{numberDisplayed}}</h3 
+                <h3 class="nameDisplay">{{numberDisplayed}}</h3 >
             </div>
             <div class=""></div>
         </div>
