@@ -30,7 +30,11 @@
                     </div>
                     <!-- curtain__panel -->
                     <div class="curtain__content">
-                        <video>
+                        <!--<video class="col-md-11 col-xs-11 col-sm-11" height="440" autoplay>
+                            <source src='' type="video/mp4">
+                        </video>-->
+
+                        <iframe src={{videoBy}} class="col-md-11 col-xs-11 col-sm-11" height="440" autoplay></iframe>
                     </div>
                     <div class="curtain__panel curtain__panel--right">
                         <h1>&nbspReady...<br><span id="clickDisplay" style="float:left">&nbsphere</span></h1>
@@ -42,7 +46,6 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="node_modules/angular/angular.min.js"></script>
-
 <script src="node_modules/angular-material/angular-material.min.js"></script>
 <script src="app/scripts/wishes.js"></script>
 </body>
