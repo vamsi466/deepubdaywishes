@@ -15,13 +15,9 @@
                 <div>Happy Birthday to You</div>
                 <div class="nameDisplay">{{nameDisplayed}}</div>
             </div>
-            <div ng-show="displayNames == 'false'">
-
+            <div ng-hide="displayNames == 'true'" style="margin-top:-15px">
                 <div>{{line1}}</div>
                 <div>{{line2}}</div>
-                <!--<div class="wordContent wordFont" ng-repeat="lines in textArr">
-                    <h3>{{lines}}</h3>
-                </div>-->
             </div>
         </div>
         <div ng-if="displayPicFrame" style="margin-left:60%">

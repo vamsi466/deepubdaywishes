@@ -73,7 +73,7 @@
             console.log(textDisplayed);
             $scope.textArr = textDisplayed.split(',');
             $scope.line1 = $scope.textArr[0],
-              $scope.line1 = $scope / textArr[1];
+              $scope.line2 = $scope.textArr[1];
             console.log($scope.textArr)
           }
 
