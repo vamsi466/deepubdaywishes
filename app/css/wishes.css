@@ -45,6 +45,10 @@ body {
   animation: pop-out 8s ease-in-out infinite;
   color: black;
 }   
+.wordcontent{
+  margin-top:15%;
+  margin-left:5%;
+}
 .wordFont {
   font-family: 'Bangers', cursive; 
   letter-spacing: 0.05em;

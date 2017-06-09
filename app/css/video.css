@@ -1,6 +1,6 @@
 .curtain {
 	margin-top: 15% ;
-	width: 100%;
+	width: 99%;
 	height: 100vh;
 	overflow: hidden;
 }
@@ -33,6 +33,7 @@
 	display: flex;
 	align-items: center;
 	background-image: url("curtain11.jpg");
+	background-repeat: no-repeat;
 	color: black;
 	float: left;
 	position: relative;

@@ -10,18 +10,18 @@
 
 <body>
     <div ng-controller="flipPhoto">
-    <!--<div ng-if="displayPicFrame" class="wordContent wordFont col-md-7 col-sm-7">
+        <div ng-if="displayPicFrame" class="wordContent wordFont col-md-7 col-sm-7">
             <div>Happy Birthday to You</div>
             <div class="nameDisplay">{{nameDisplayed}}</div>
         </div>
-        <div ng-if="displayPicFrame"style="margin-left:60%">
+        <div ng-if="displayPicFrame" style="margin-left:60%">
             <div class="picture-frame flip">
                 <div class="matte">
                     <img class="art" src="app/images/{{imageDisplayed}}">
                 </div>
             </div>
-        </div> ng-if="displayPicFrame != 'true'"-->
-        <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 wordContent wordFont">
+        </div>
+        <div ng-if="displayPicFrame != 'true'" class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 wordFont">
             <div class="curtain">
                 <div class="curtain__wrapper">
                     <input type="checkbox" checked>
@@ -30,11 +30,11 @@
                     </div>
                     <!-- curtain__panel -->
                     <div class="curtain__content">
-                        <!--<video class="col-md-11 col-xs-11 col-sm-11" height="440" autoplay>
-                            <source src='' type="video/mp4">
-                        </video>-->
+                        <video id="myvideo" class="col-md-11 col-xs-11 col-sm-11" height="440" autoplay onended="playNext()">
+                            <source id="videoBy" src='' type="video/mp4">
+                        </video>
 
-                        <iframe src={{videoBy}} class="col-md-11 col-xs-11 col-sm-11" height="440" autoplay></iframe>
+                        <!--<iframe src="{{videoBy}}" class="col-md-11 col-xs-11 col-sm-11" height="440" autoplay></iframe>-->
                     </div>
                     <div class="curtain__panel curtain__panel--right">
                         <h1>&nbspReady...<br><span id="clickDisplay" style="float:left">&nbsphere</span></h1>
@@ -43,11 +43,11 @@
             </div>
         </div>
     </div>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="node_modules/angular/angular.min.js"></script>
-<script src="node_modules/angular-material/angular-material.min.js"></script>
-<script src="app/scripts/wishes.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-material/angular-material.min.js"></script>
+    <script src="app/scripts/wishes.js"></script>
 </body>
 
 </html>
