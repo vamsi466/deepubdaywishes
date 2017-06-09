@@ -64,3 +64,11 @@
 .curtain__content img {
 	width: 20%;
 }
+
+
+#clickDisplay{
+  position: relative;
+  animation: pop-out 2s ease-in-out infinite;
+  color: grey;
+  font-size:20px;
+}

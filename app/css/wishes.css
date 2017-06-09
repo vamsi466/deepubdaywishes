@@ -66,9 +66,3 @@ body {
   100%{transform: scale3d(1, 1, 1);opacity: 0}
 }
 
-#clickDisplay{
-  position: relative;
-  animation: pop-out 2s ease-in-out infinite;
-  color: grey;
-  font-size:20px;
-}
