@@ -1,5 +1,4 @@
 <html ng-app="wish">
-
 <head>
     <title>Happy Bday Deepu</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -7,15 +6,14 @@
     <link rel="stylesheet" href="app/css/wishes.css">
     <link rel="stylesheet" href="app/css/video.css">
 </head>
-
 <body>
     <div ng-controller="flipPhoto">
-        <div ng-if="displayPicFrame" class="wordContent wordFont col-md-7 col-sm-7">
+        <!-- <div ng-if="displayPicFrame" class="wordContent wordFont col-md-7 col-sm-7">
             <div ng-if="displayNames">
                 <div>Happy Birthday to You</div>
                 <div class="nameDisplay">{{nameDisplayed}}</div>
             </div>
-            <div ng-hide="displayNames == 'true'" style="margin-top:-15px">
+            <div ng-hide="displayNames == 'true'" id="quotes-text">
                 <div>{{line1}}</div>
                 <div>{{line2}}</div>
             </div>
@@ -26,39 +24,17 @@
                     <img class="art" src="app/images/{{imageDisplayed}}">
                 </div>
             </div>
-        </div>
-        <div ng-if="displayPicFrame != 'true'" class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 wordFont">
-
-            <!--<div class="curtain"><
-                div class="curtain__wrapper">
-                    <input type="checkbox" checked>
-                    <div class="curtain__panel curtain__panel--left">
-                        <h1>Are You<br><span id="clickDisplay" style="float:right">Click</span></h1>
-                    </div>
-                   
-                    <div class="curtain__content">
-                        <video id="myvideo" class="col-md-11 col-xs-11 col-sm-11" height="440" autoplay onended="playNext()">
-                            <source id="videoBy" src='' type="video/mp4">
-                        </video>
-
-                       
-                    </div>
-                    <div class="curtain__panel curtain__panel--right">
-                        <h1>&nbspReady...<br><span id="clickDisplay" style="float:left">&nbsphere</span></h1>
-                    </div>
-                </div
-            </div>-->
-
+        </div>  ng-show="displayPicFrame != 'true'" -->
+        <!-- <div id="videoDiv" class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 wordFont">
             <div class="curtain">
                 <div class="curtain__wrapper">
                     <input type="checkbox" ng-model='check' ng-checked='true' ng-change='playIt()' id='check'>
                     <div class="curtain__panel curtain__panel--left">
                         <h1>Are You<br><span id="clickDisplay" style="float:right">Click</span></h1>
                     </div>
-                    <!-- curtain__panel -->
                     <div class="curtain__content">
-                        <pre style='width:90%' id='nameThem'>Sreelatha</pre>
-                        <video id="myvideo" class="col-md-11 col-xs-11 col-sm-11" height="440" onended="playNext()" src='app/videos/Sreelatha.mp4'>
+                        <div class="name" id='nameThem'>Raghavendra and Namratha</div>
+                        <video id="myvideo" class="col-md-11 col-xs-11 col-sm-11" height="380" onended="playNext()" src='app/videos/Ragha and Namratha.mp4'>
                         </video>
 
                     </div>
@@ -67,12 +43,20 @@
                     </div>
                 </div>
             </div>
-
+        </div> -->
+        <div id="thanks" style="margin-top:5%">
+          <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8 thankyou">
+              <h1 style="margin-bottom:30px">Thank You</h1>
+              <div style="margin-top:10px"ng-repeat = "names in thanksArrLeft">
+                  <span>{{names}}</span>
+              </div>
         </div>
     </div>
     <script type="text/javascript">
         var videoDom = document.getElementById("myvideo");
-        var videosArr = ["Sreelatha", "Roja", "Suma", "Sravya and Madhu", "Vinitha", "Nidhi", "Hema", "Ramya", "Sravanthi", "Jenny", "Mahalakshmi", "Raghavendra", "Namratha", "Gnaneshwari", "Praneeth", "Nandini", "Santu", "Latha", "Charan", "Soni", "Amma", "Nanna"]
+        var videoDiv = document.getElementById("videoDiv");
+        var thanksyou = document.getElementById("thanks");
+        var videosArr = ["Ragha and Namratha","Sreelatha", "Roja", "Suma", "Sravya and Madhu", "Vinitha", "Nidhi", "Hema", "Ramya", "Sravanthi", "Soujanya", "Anusha", "Sai Roja", "Jenny", "Mahalakshmi", "Raghavendra", "Namratha", "Gnaneshwari", "Praneeth", "Nandini", "Santu","Vamsi","Latha", "Charan", "Soni", "Amma", "Nanna","The End"]
         var i = 1;
         var length = videosArr.length;
         function playNext() {
@@ -80,14 +64,17 @@
                 document.getElementById("nameThem").innerText = videosArr[i];
                 videoDom.setAttribute("src", "app/videos/" + videosArr[i] + ".mp4");
                 videoDom.play();
+                i++;
+            }else{
+              videoDiv.style.display = 'none';
+              thanksyou.style.display = 'block';
             }
-            i++;
+
         }
     </script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/angular/angular.min.js"></script>
-    <script src="node_modules/angular-material/angular-material.min.js"></script>
     <script src="app/scripts/wishes.js"></script>
 </body>
 

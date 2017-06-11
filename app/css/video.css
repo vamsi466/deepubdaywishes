@@ -32,7 +32,7 @@
 .curtain__panel {
 	display: flex;
 	align-items: center;
-	background-image: url("curtain11.jpg");
+	background-image: url("curtain.jpg");
 	background-repeat: no-repeat;
 	color: black;
 	float: left;
@@ -71,4 +71,19 @@
   animation: pop-out 2s ease-in-out infinite;
   color: grey;
   font-size:20px;
+}
+
+.name{
+	font-family: 'Bangers', cursive;
+  letter-spacing: 0.05em;
+  color: white;
+  font-size: 25px;
+	margin-left:-10%;
+}
+.thankyou{
+	font-family: 'Bangers', cursive;
+  letter-spacing: 0.05em;
+  color: white;
+  font-size: 25px;
+	text-align:center;
 }
