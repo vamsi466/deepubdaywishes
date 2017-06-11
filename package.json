@@ -1,16 +1,16 @@
 {
-  "name": "deepu-bday",
+  "name": "deepikabirthdaywishes",
   "version": "1.0.0",
   "description": "wishes",
-  "main": "app.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"preinstall": "npm install -g http-server",
+	"start": "http-server"
   },
   "author": "vamsi",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-material": "^1.1.4",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1"
   }

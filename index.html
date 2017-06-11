@@ -8,7 +8,7 @@
 </head>
 <body>
     <div ng-controller="flipPhoto">
-        <!-- <div ng-if="displayPicFrame" class="wordContent wordFont col-md-7 col-sm-7">
+        <div ng-if="displayPicFrame" class="wordContent wordFont col-md-7 col-sm-7">
             <div ng-if="displayNames">
                 <div>Happy Birthday to You</div>
                 <div class="nameDisplay">{{nameDisplayed}}</div>
@@ -24,8 +24,8 @@
                     <img class="art" src="app/images/{{imageDisplayed}}">
                 </div>
             </div>
-        </div>  ng-show="displayPicFrame != 'true'" -->
-        <!-- <div id="videoDiv" class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 wordFont">
+        </div> 
+        <div ng-show="displayPicFrame != 'true'" id="videoDiv" class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 wordFont">
             <div class="curtain">
                 <div class="curtain__wrapper">
                     <input type="checkbox" ng-model='check' ng-checked='true' ng-change='playIt()' id='check'>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div id="thanks" style="margin-top:5%">
           <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8 thankyou">
               <h1 style="margin-bottom:30px">Thank You</h1>

@@ -24,7 +24,7 @@
       }
     }])
     .controller("flipPhoto", ['$scope', 'shuffleItems', '$timeout', '$interval', 'ajaxcallservice', function ($scope, shuffleItems, $timeout, $interval, ajaxcallservice) {
-      var initialArr = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg'];
+      var initialArr = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg','24.jpg'];
       var namesIniArr = ['Deepika', 'Dimple Queen', 'Campus Beauty(CB)', 'Mouni', 'Strawberry', 'Deepu', 'Mani', 'Deeksha', 'Papam from Polavaram', 'Sotta Buggala Sundari']
       $scope.quotesArr = ["Nee Chirunavvutho chinukulu saitam kurpinchagalavu...,Nee Sottabuggala lo samudrani saitam nimpagalavu", "ఆ దీపం లో అయిన నూనీ లేకుండా చూడగలం కానీ..., ఈ దీపికా మొహం లో నవ్వు లేకుండా చూడలేం", "మనిషి : ఓయ్ చిరునవ్వు నువు ఎక్కడ ఉంటావు అని అడుగుతే ?, చిరునవ్వు : నేను ఎప్పుడైనా దీపికా మొహం మీద ఉంటాను అని అన్నది","When another Birthday comes around,then say that you are one year wiser not older","ఎప్పుడు నవ్వుతూ ఉండు అప్పుడు, ఈ ప్రపంచంలో ఎవరూ నీకన్న అందంగా ఉండరు"]
       $scope.thanksArrLeft=["Producer : Raghavendra (Laptop)","Technicians : Raghavendra,Gnaneshwari,Vamsi(Coding)","Photography: Soni, Soujanya","Cast and Crew:"," Sreelatha, Roja, Suma, Sravya, Madhu, Vinitha", "Nidhi, Hema, Ramya, Sravanthi, Soujanya, Anusha", "Sai Roja, Jenny, Mahalakshmi, Raghavendra, Namratha ", "Gnaneshwari, Praneeth,Nandini, Santu, Vamsi, Latha", "Charan, Soni, Amma, Nanna","--A film by Vamsi Ram"]
