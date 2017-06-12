@@ -4,14 +4,10 @@
   "description": "wishes",
   "main": "index.html",
   "scripts": {
-	"preinstall": "npm install -g http-server",
-	"start": "http-server"
+    "preinstall": "npm install -g http-server",
+    "start": "http-server"
   },
   "author": "vamsi",
   "license": "ISC",
-  "dependencies": {
-    "angular": "^1.6.4",
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
-  }
+  "dependencies": {}
 }

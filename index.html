@@ -1,11 +1,13 @@
 <html ng-app="wish">
+
 <head>
     <title>Happy Bday Deepu</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="app/css/wishes.css">
     <link rel="stylesheet" href="app/css/video.css">
 </head>
+
 <body>
     <div ng-controller="flipPhoto">
         <div ng-if="displayPicFrame" class="wordContent wordFont col-md-7 col-sm-7">
@@ -24,7 +26,7 @@
                     <img class="art" src="app/images/{{imageDisplayed}}">
                 </div>
             </div>
-        </div> 
+        </div>
         <div ng-show="displayPicFrame != 'true'" id="videoDiv" class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 wordFont">
             <div class="curtain">
                 <div class="curtain__wrapper">
@@ -45,37 +47,37 @@
             </div>
         </div>
         <div id="thanks" style="margin-top:5%">
-          <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8 thankyou">
-              <h1 style="margin-bottom:30px">Thank You</h1>
-              <div style="margin-top:10px"ng-repeat = "names in thanksArrLeft">
-                  <span>{{names}}</span>
-              </div>
+            <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8 thankyou">
+                <h1 style="margin-bottom:30px">Thank You</h1>
+                <div style="margin-top:10px" ng-repeat="names in thanksArrLeft">
+                    <span>{{names}}</span>
+                </div>
+            </div>
         </div>
-    </div>
-    <script type="text/javascript">
-        var videoDom = document.getElementById("myvideo");
-        var videoDiv = document.getElementById("videoDiv");
-        var thanksyou = document.getElementById("thanks");
-        var videosArr = ["Ragha and Namratha","Sreelatha", "Roja", "Suma", "Sravya and Madhu", "Vinitha", "Nidhi", "Hema", "Ramya", "Sravanthi", "Soujanya", "Anusha", "Sai Roja", "Jenny", "Mahalakshmi", "Raghavendra", "Namratha", "Gnaneshwari", "Praneeth", "Nandini", "Santu","Vamsi","Latha", "Charan", "Soni", "Amma", "Nanna","The End"]
-        var i = 1;
-        var length = videosArr.length;
-        function playNext() {
-            if (i < length) {
-                document.getElementById("nameThem").innerText = videosArr[i];
-                videoDom.setAttribute("src", "app/videos/" + videosArr[i] + ".mp4");
-                videoDom.play();
-                i++;
-            }else{
-              videoDiv.style.display = 'none';
-              thanksyou.style.display = 'block';
-            }
+        <script type="text/javascript">
+            var videoDom = document.getElementById("myvideo");
+            var videoDiv = document.getElementById("videoDiv");
+            var thanksyou = document.getElementById("thanks");
+            var videosArr = ["Ragha and Namratha", "Sreelatha", "Roja", "Suma", "Sravya and Madhu", "Vinitha", "Nidhi", "Hema", "Ramya", "Sravanthi", "Soujanya", "Anusha", "Sai Roja", "Jenny", "Mahalakshmi", "Raghavendra", "Namratha", "Gnaneshwari", "Praneeth", "Nandini", "Santu", "Vamsi", "Latha", "Charan", "Soni", "Amma", "Nanna", "The End"]
+            var i = 1;
+            var length = videosArr.length;
+            function playNext() {
+                if (i < length) {
+                    document.getElementById("nameThem").innerText = videosArr[i];
+                    videoDom.setAttribute("src", "app/videos/" + videosArr[i] + ".mp4");
+                    videoDom.play();
+                    i++;
+                } else {
+                    videoDiv.style.display = 'none';
+                    thanksyou.style.display = 'block';
+                }
 
-        }
-    </script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="app/scripts/wishes.js"></script>
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="app/scripts/wishes.js"></script>
 </body>
 
 </html>
